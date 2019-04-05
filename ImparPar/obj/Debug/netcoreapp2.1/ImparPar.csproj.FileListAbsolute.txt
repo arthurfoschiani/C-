@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\obj\Debug\netcoreapp2.1\ImparPar.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\obj\Debug\netcoreapp2.1\ImparPar.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\obj\Debug\netcoreapp2.1\ImparPar.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\obj\Debug\netcoreapp2.1\ImparPar.AssemblyInfo.cs
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\bin\Debug\netcoreapp2.1\ImparPar.deps.json
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\bin\Debug\netcoreapp2.1\ImparPar.runtimeconfig.json
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\bin\Debug\netcoreapp2.1\ImparPar.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\bin\Debug\netcoreapp2.1\ImparPar.dll
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\bin\Debug\netcoreapp2.1\ImparPar.pdb
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\obj\Debug\netcoreapp2.1\ImparPar.dll
+C:\Users\43127523890\Documents\Aulas C#\ImparPar\obj\Debug\netcoreapp2.1\ImparPar.pdb

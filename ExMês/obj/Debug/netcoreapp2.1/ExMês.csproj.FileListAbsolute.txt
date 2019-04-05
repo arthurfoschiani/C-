@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\Aulas C#\ExMês\obj\Debug\netcoreapp2.1\ExMês.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\Aulas C#\ExMês\obj\Debug\netcoreapp2.1\ExMês.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\ExMês\obj\Debug\netcoreapp2.1\ExMês.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\ExMês\obj\Debug\netcoreapp2.1\ExMês.AssemblyInfo.cs
+C:\Users\43127523890\Documents\Aulas C#\ExMês\bin\Debug\netcoreapp2.1\ExMês.deps.json
+C:\Users\43127523890\Documents\Aulas C#\ExMês\bin\Debug\netcoreapp2.1\ExMês.runtimeconfig.json
+C:\Users\43127523890\Documents\Aulas C#\ExMês\bin\Debug\netcoreapp2.1\ExMês.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\Aulas C#\ExMês\bin\Debug\netcoreapp2.1\ExMês.dll
+C:\Users\43127523890\Documents\Aulas C#\ExMês\bin\Debug\netcoreapp2.1\ExMês.pdb
+C:\Users\43127523890\Documents\Aulas C#\ExMês\obj\Debug\netcoreapp2.1\ExMês.dll
+C:\Users\43127523890\Documents\Aulas C#\ExMês\obj\Debug\netcoreapp2.1\ExMês.pdb

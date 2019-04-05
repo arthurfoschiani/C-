@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\obj\Debug\netcoreapp2.1\Ex6dowhile.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\obj\Debug\netcoreapp2.1\Ex6dowhile.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\obj\Debug\netcoreapp2.1\Ex6dowhile.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\obj\Debug\netcoreapp2.1\Ex6dowhile.AssemblyInfo.cs
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\bin\Debug\netcoreapp2.1\Ex6dowhile.deps.json
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\bin\Debug\netcoreapp2.1\Ex6dowhile.runtimeconfig.json
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\bin\Debug\netcoreapp2.1\Ex6dowhile.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\bin\Debug\netcoreapp2.1\Ex6dowhile.dll
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\bin\Debug\netcoreapp2.1\Ex6dowhile.pdb
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\obj\Debug\netcoreapp2.1\Ex6dowhile.dll
+C:\Users\43127523890\Documents\Aulas C#\Ex6dowhile\obj\Debug\netcoreapp2.1\Ex6dowhile.pdb

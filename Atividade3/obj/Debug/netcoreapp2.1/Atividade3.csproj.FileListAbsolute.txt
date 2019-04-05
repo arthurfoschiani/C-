@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\bin\Debug\netcoreapp2.1\Atividade3.deps.json
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\bin\Debug\netcoreapp2.1\Atividade3.runtimeconfig.json
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\bin\Debug\netcoreapp2.1\Atividade3.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\bin\Debug\netcoreapp2.1\Atividade3.dll
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\bin\Debug\netcoreapp2.1\Atividade3.pdb
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\obj\Debug\netcoreapp2.1\Atividade3.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\obj\Debug\netcoreapp2.1\Atividade3.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\obj\Debug\netcoreapp2.1\Atividade3.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\obj\Debug\netcoreapp2.1\Atividade3.AssemblyInfo.cs
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\obj\Debug\netcoreapp2.1\Atividade3.dll
+C:\Users\43127523890\Documents\Aulas C#\Atividade3\obj\Debug\netcoreapp2.1\Atividade3.pdb

@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\obj\Debug\netcoreapp2.1\Ex3Clima.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\obj\Debug\netcoreapp2.1\Ex3Clima.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\obj\Debug\netcoreapp2.1\Ex3Clima.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\obj\Debug\netcoreapp2.1\Ex3Clima.AssemblyInfo.cs
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\bin\Debug\netcoreapp2.1\Ex3Clima.deps.json
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\bin\Debug\netcoreapp2.1\Ex3Clima.runtimeconfig.json
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\bin\Debug\netcoreapp2.1\Ex3Clima.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\bin\Debug\netcoreapp2.1\Ex3Clima.dll
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\bin\Debug\netcoreapp2.1\Ex3Clima.pdb
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\obj\Debug\netcoreapp2.1\Ex3Clima.dll
+C:\Users\43127523890\Documents\Aulas C#\Ex3Clima\obj\Debug\netcoreapp2.1\Ex3Clima.pdb

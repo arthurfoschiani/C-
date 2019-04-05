@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\obj\Debug\netcoreapp2.1\Ex8for.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\obj\Debug\netcoreapp2.1\Ex8for.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\obj\Debug\netcoreapp2.1\Ex8for.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\obj\Debug\netcoreapp2.1\Ex8for.AssemblyInfo.cs
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\bin\Debug\netcoreapp2.1\Ex8for.deps.json
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\bin\Debug\netcoreapp2.1\Ex8for.runtimeconfig.json
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\bin\Debug\netcoreapp2.1\Ex8for.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\bin\Debug\netcoreapp2.1\Ex8for.dll
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\bin\Debug\netcoreapp2.1\Ex8for.pdb
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\obj\Debug\netcoreapp2.1\Ex8for.dll
+C:\Users\43127523890\Documents\Aulas C#\Ex8for\obj\Debug\netcoreapp2.1\Ex8for.pdb
