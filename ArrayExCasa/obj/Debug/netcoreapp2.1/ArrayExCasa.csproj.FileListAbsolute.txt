@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\C-\ArrayExCasa\bin\Debug\netcoreapp2.1\ArrayExCasa.deps.json
+C:\Users\43127523890\Documents\C-\ArrayExCasa\bin\Debug\netcoreapp2.1\ArrayExCasa.runtimeconfig.json
+C:\Users\43127523890\Documents\C-\ArrayExCasa\bin\Debug\netcoreapp2.1\ArrayExCasa.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\C-\ArrayExCasa\bin\Debug\netcoreapp2.1\ArrayExCasa.dll
+C:\Users\43127523890\Documents\C-\ArrayExCasa\bin\Debug\netcoreapp2.1\ArrayExCasa.pdb
+C:\Users\43127523890\Documents\C-\ArrayExCasa\obj\Debug\netcoreapp2.1\ArrayExCasa.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-\ArrayExCasa\obj\Debug\netcoreapp2.1\ArrayExCasa.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-\ArrayExCasa\obj\Debug\netcoreapp2.1\ArrayExCasa.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-\ArrayExCasa\obj\Debug\netcoreapp2.1\ArrayExCasa.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-\ArrayExCasa\obj\Debug\netcoreapp2.1\ArrayExCasa.dll
+C:\Users\43127523890\Documents\C-\ArrayExCasa\obj\Debug\netcoreapp2.1\ArrayExCasa.pdb

@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\C-\ForeachArray\obj\Debug\netcoreapp2.1\ForeachArray.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-\ForeachArray\obj\Debug\netcoreapp2.1\ForeachArray.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-\ForeachArray\obj\Debug\netcoreapp2.1\ForeachArray.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-\ForeachArray\obj\Debug\netcoreapp2.1\ForeachArray.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-\ForeachArray\bin\Debug\netcoreapp2.1\ForeachArray.deps.json
+C:\Users\43127523890\Documents\C-\ForeachArray\bin\Debug\netcoreapp2.1\ForeachArray.runtimeconfig.json
+C:\Users\43127523890\Documents\C-\ForeachArray\bin\Debug\netcoreapp2.1\ForeachArray.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\C-\ForeachArray\bin\Debug\netcoreapp2.1\ForeachArray.dll
+C:\Users\43127523890\Documents\C-\ForeachArray\bin\Debug\netcoreapp2.1\ForeachArray.pdb
+C:\Users\43127523890\Documents\C-\ForeachArray\obj\Debug\netcoreapp2.1\ForeachArray.dll
+C:\Users\43127523890\Documents\C-\ForeachArray\obj\Debug\netcoreapp2.1\ForeachArray.pdb

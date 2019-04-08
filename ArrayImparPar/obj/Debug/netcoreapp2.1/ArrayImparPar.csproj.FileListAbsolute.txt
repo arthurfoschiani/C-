@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\C-\ArrayImparPar\bin\Debug\netcoreapp2.1\ArrayImparPar.deps.json
+C:\Users\43127523890\Documents\C-\ArrayImparPar\bin\Debug\netcoreapp2.1\ArrayImparPar.runtimeconfig.json
+C:\Users\43127523890\Documents\C-\ArrayImparPar\bin\Debug\netcoreapp2.1\ArrayImparPar.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\C-\ArrayImparPar\bin\Debug\netcoreapp2.1\ArrayImparPar.dll
+C:\Users\43127523890\Documents\C-\ArrayImparPar\bin\Debug\netcoreapp2.1\ArrayImparPar.pdb
+C:\Users\43127523890\Documents\C-\ArrayImparPar\obj\Debug\netcoreapp2.1\ArrayImparPar.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-\ArrayImparPar\obj\Debug\netcoreapp2.1\ArrayImparPar.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-\ArrayImparPar\obj\Debug\netcoreapp2.1\ArrayImparPar.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-\ArrayImparPar\obj\Debug\netcoreapp2.1\ArrayImparPar.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-\ArrayImparPar\obj\Debug\netcoreapp2.1\ArrayImparPar.dll
+C:\Users\43127523890\Documents\C-\ArrayImparPar\obj\Debug\netcoreapp2.1\ArrayImparPar.pdb
