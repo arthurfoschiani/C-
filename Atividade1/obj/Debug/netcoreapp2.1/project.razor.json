@@ -1,14 +1,6 @@
 {
-  "ProjectFilePath": "c:\\Users\\43127523890\\Documents\\Aulas C#\\Atividade1\\Atividade1.csproj",
+  "ProjectFilePath": "c:\\Users\\43127523890\\Documents\\C-\\Atividade1\\Atividade1.csproj",
   "TargetFramework": "netcoreapp2.1",
   "TagHelpers": [],
-  "Configuration": {
-    "ConfigurationName": "UnsupportedRazor",
-    "LanguageVersion": "1.0",
-    "Extensions": [
-      {
-        "ExtensionName": "UnsupportedRazorExtension"
-      }
-    ]
-  }
+  "Configuration": null
 }
