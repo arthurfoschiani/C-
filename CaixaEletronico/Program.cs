@@ -6,36 +6,23 @@ namespace CaixaEletronico
     {
         static void Main(string[] args)
         {
-            int[] notas = {1, 5, 10, 20, 50, 100};
-            int a;
-            int x = 0;
-            int y = 0;
-            int z = 0;
-            int r = 0;
-            int t = 0;
-            int p = 0;
+            int[] notas = { 100, 50, 20, 10, 5, 2, 1 };
+            int valor;
+            int quantia = 0;
 
             Console.WriteLine("Insira o valor que você deseja sacar");
-            a = int.Parse(Console.ReadLine());
+            quantia = int.Parse(Console.ReadLine());
+            DateTime data = DateTime.Now;
 
-            x = a / 100;
-            int b = a - 100 * x;
-            Console.WriteLine("Você receberá {0} notas de R$100,00", x);
-            y = b / 50;
-            int c = b - 50 * y;
-            Console.WriteLine("Você receberá {0} notas de R$50,00", y);
-            z = c / 20;
-            int d = c - 20 * z;
-            Console.WriteLine("Você receberá {0} notas de R$20,00", z);
-            r = d / 10;
-            int e = d - 10 * r;
-            Console.WriteLine("Você receberá {0} notas de R$10,00", r);
-            t = e / 5;
-            int f = e - 5 * t;
-            Console.WriteLine("Voce receberá {0} notas de R$5,00", t);
-            p = f / 1;
-            int g = f - 5 * p;
-            Console.WriteLine("Você receberá {0} moedas de R$1,00", p);
+            for (int i = 0; i < notas.Length; i++)
+            {
+                valor = quantia / notas[i];
+                quantia = quantia % notas[i];
+                if (valor != 0)
+                {
+                    System.Console.WriteLine($"Você recebeu {valor} nota(s) de {notas[i]} em {data}");
+                }
+            }
         }
     }
 }

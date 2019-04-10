@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\bin\Debug\netcoreapp2.1\CompanhiaAérea.deps.json
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\bin\Debug\netcoreapp2.1\CompanhiaAérea.runtimeconfig.json
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\bin\Debug\netcoreapp2.1\CompanhiaAérea.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\bin\Debug\netcoreapp2.1\CompanhiaAérea.dll
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\bin\Debug\netcoreapp2.1\CompanhiaAérea.pdb
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\obj\Debug\netcoreapp2.1\CompanhiaAérea.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\obj\Debug\netcoreapp2.1\CompanhiaAérea.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\obj\Debug\netcoreapp2.1\CompanhiaAérea.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\obj\Debug\netcoreapp2.1\CompanhiaAérea.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\obj\Debug\netcoreapp2.1\CompanhiaAérea.dll
+C:\Users\43127523890\Documents\C-\CompanhiaAérea\obj\Debug\netcoreapp2.1\CompanhiaAérea.pdb
