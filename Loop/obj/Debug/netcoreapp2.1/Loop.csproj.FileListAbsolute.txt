@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\C-\Loop\bin\Debug\netcoreapp2.1\Loop.deps.json
+C:\Users\43127523890\Documents\C-\Loop\bin\Debug\netcoreapp2.1\Loop.runtimeconfig.json
+C:\Users\43127523890\Documents\C-\Loop\bin\Debug\netcoreapp2.1\Loop.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\C-\Loop\bin\Debug\netcoreapp2.1\Loop.dll
+C:\Users\43127523890\Documents\C-\Loop\bin\Debug\netcoreapp2.1\Loop.pdb
+C:\Users\43127523890\Documents\C-\Loop\obj\Debug\netcoreapp2.1\Loop.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-\Loop\obj\Debug\netcoreapp2.1\Loop.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-\Loop\obj\Debug\netcoreapp2.1\Loop.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-\Loop\obj\Debug\netcoreapp2.1\Loop.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-\Loop\obj\Debug\netcoreapp2.1\Loop.dll
+C:\Users\43127523890\Documents\C-\Loop\obj\Debug\netcoreapp2.1\Loop.pdb

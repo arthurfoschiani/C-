@@ -1,0 +1,11 @@
+C:\Users\43127523890\Documents\C-\Atividade5\bin\Debug\netcoreapp2.1\Atividade5.deps.json
+C:\Users\43127523890\Documents\C-\Atividade5\bin\Debug\netcoreapp2.1\Atividade5.runtimeconfig.json
+C:\Users\43127523890\Documents\C-\Atividade5\bin\Debug\netcoreapp2.1\Atividade5.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\C-\Atividade5\bin\Debug\netcoreapp2.1\Atividade5.dll
+C:\Users\43127523890\Documents\C-\Atividade5\bin\Debug\netcoreapp2.1\Atividade5.pdb
+C:\Users\43127523890\Documents\C-\Atividade5\obj\Debug\netcoreapp2.1\Atividade5.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-\Atividade5\obj\Debug\netcoreapp2.1\Atividade5.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-\Atividade5\obj\Debug\netcoreapp2.1\Atividade5.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-\Atividade5\obj\Debug\netcoreapp2.1\Atividade5.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-\Atividade5\obj\Debug\netcoreapp2.1\Atividade5.dll
+C:\Users\43127523890\Documents\C-\Atividade5\obj\Debug\netcoreapp2.1\Atividade5.pdb

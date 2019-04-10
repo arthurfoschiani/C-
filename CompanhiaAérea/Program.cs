@@ -6,18 +6,18 @@ namespace CompanhiaAérea
     {
         static void Main(string[] args)
         {
-            string[] nome = new string[5];
             bool repetir = true;
+            string[] nome = new string[5];
             int[] passagem = new int[5];
-            int menu;
-            int x = 0;
             DateTime[] data = new DateTime[5];
+            int x = 0;
+
+                System.Console.WriteLine("--------Bem Vindo à Arthur & Cia--------");
 
             while (repetir)
             {
-                System.Console.WriteLine("--------Bem Vindo a Arthur & Cia--------");
                 System.Console.WriteLine("Escolha uma das opções (com os números indicados respectivamente):\n1-Registrar Passagem\n2-Visualizar Passagens\n0-Sair");
-                menu = int.Parse(Console.ReadLine());
+                int menu = int.Parse(Console.ReadLine());
                 switch (menu)
                 {
                     case 1:
@@ -27,11 +27,12 @@ namespace CompanhiaAérea
                             nome[x] = Console.ReadLine();
                             System.Console.WriteLine("Insira o número de sua passagem:");
                             passagem[x] = int.Parse(Console.ReadLine());
-                            System.Console.WriteLine("Insira a data desejada para o voo (dd/MM/aaaa):");
+                            System.Console.WriteLine("Insira a data desejada para o voo (dd/mm/aaaa):");
                             data[x] = DateTime.Parse(Console.ReadLine());
+                            System.Console.WriteLine("Passageiro cadastrado com sucesso!");
                             x++;
                         }
-                        else 
+                        else
                         {
                             System.Console.WriteLine("Limite de passagem atingido.");
                         }
@@ -40,10 +41,10 @@ namespace CompanhiaAérea
                     case 2:
                         int y = 0;
                         System.Console.WriteLine("--------Passagens Registradas--------");
-                        for (int j = 0; j < x; j++)
+                        for (int i = 0; i < x; i++)
                         {
-                            System.Console.WriteLine($"\n\nPassagem {y + 1}:\n\nNome: {nome[y]}\nNúmero da Passagem: {passagem[y]}\nData Escolhida: {data[y]}");
-                            y++;
+                            System.Console.WriteLine($"\n\nPassagem {i + 1}:\n\nNome: {nome[i]}\nNúmero da Passagem: {passagem[i]}\nData Escolhida: {data[i].ToShortDateString()}");
+                            i++;
                         }
                         break;
 
