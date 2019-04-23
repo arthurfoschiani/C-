@@ -1,11 +1,11 @@
+C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.AssemblyInfo.cs
 C:\Users\43127523890\Documents\C-\Pitzuka\bin\Debug\netcoreapp2.1\Pitzuka.deps.json
 C:\Users\43127523890\Documents\C-\Pitzuka\bin\Debug\netcoreapp2.1\Pitzuka.runtimeconfig.json
 C:\Users\43127523890\Documents\C-\Pitzuka\bin\Debug\netcoreapp2.1\Pitzuka.runtimeconfig.dev.json
 C:\Users\43127523890\Documents\C-\Pitzuka\bin\Debug\netcoreapp2.1\Pitzuka.dll
 C:\Users\43127523890\Documents\C-\Pitzuka\bin\Debug\netcoreapp2.1\Pitzuka.pdb
-C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.csprojAssemblyReference.cache
-C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.csproj.CoreCompileInputs.cache
-C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.AssemblyInfoInputs.cache
-C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.AssemblyInfo.cs
 C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.dll
 C:\Users\43127523890\Documents\C-\Pitzuka\obj\Debug\netcoreapp2.1\Pitzuka.pdb
