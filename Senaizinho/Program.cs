@@ -1,125 +1,118 @@
 ﻿using System;
+using Senaizinho_2_Manha.enums;
 
-namespace Senaizinho
+namespace Senaizinho_2_Manha
 {
     class Program
     {
-        static void Main (string[] args) {
-            Aluno[] alunos = new Aluno[2];
+        static void Main(string[] args)
+        {
+
+            int limiteAlunos = 3;
+            int limiteSalas = 2;
+            int limiteProfessores = 2;
+
+            Aluno[] alunos = new Aluno[3];
+            Sala[] salas = new Sala[2];
+
             int alunosCadastrados = 0;
-            Sala[] salas = new Sala[1];
             int salasCadastradas = 0;
 
             bool querSair = false;
-            do {
-                Console.Clear ();
-                System.Console.WriteLine ("===================================");
+            do
+            {
+                Console.Clear();
+                System.Console.WriteLine("===================================");
                 Console.ForegroundColor = ConsoleColor.DarkRed;
-                System.Console.WriteLine ("        *** SENAIzinho ***         ");
-                Console.ResetColor ();
-                System.Console.WriteLine ("         Seja bem-vindo(a)         ");
-                System.Console.WriteLine ("===================================");
-                System.Console.WriteLine ("|| Digite sua opção:             ||");
-                System.Console.WriteLine ("||  1 - Cadastrar Aluno          ||");
-                System.Console.WriteLine ("||  2 - Cadastrar Sala           ||");
-                System.Console.WriteLine ("||  3 - Alocar Aluno             ||");
-                System.Console.WriteLine ("||  4 - Remover Aluno            ||");
-                System.Console.WriteLine ("||  5 - Verificar Salas          ||");
-                System.Console.WriteLine ("||  6 - Verificar Alunos         ||");
-                System.Console.WriteLine ("||  0 - Sair                     ||");
-                System.Console.WriteLine ("===================================");
+                System.Console.WriteLine("        *** SENAIzinho ***         ");
+                Console.ResetColor();
+                System.Console.WriteLine("         Seja bem-vindo(a)         ");
+                System.Console.WriteLine("===================================");
+                System.Console.WriteLine("|| Digite sua opção:             ||");
+                System.Console.WriteLine("||  1 - Cadastrar Aluno          ||");
+                System.Console.WriteLine("||  2 - Cadastrar Sala           ||");
+                System.Console.WriteLine("||  3 - Alocar Aluno             ||");
+                System.Console.WriteLine("||  4 - Remover Aluno            ||");
+                System.Console.WriteLine("||  5 - Verificar Salas          ||");
+                System.Console.WriteLine("||  6 - Verificar Alunos         ||");
+                System.Console.WriteLine("||  0 - Sair                     ||");
+                System.Console.WriteLine("===================================");
 
-                System.Console.Write ("Código: ");
-                int codigo = int.Parse (Console.ReadLine ());
+                System.Console.Write("Código: ");
+                int codigo = int.Parse(Console.ReadLine());
 
-                switch (codigo) {
+                switch (codigo)
+                {
+                    #region CADASTRO_ALUNOS
                     case 1:
-                        Aluno aluno = new Aluno ();
+                        if (limiteAlunos != alunosCadastrados)
+                        {
+                            Aluno aluno = new Aluno();
 
-                        System.Console.WriteLine ("Digite o nome do aluno");
-                        aluno.nome = Console.ReadLine ();
+                            System.Console.WriteLine("Digite o nome do aluno");
+                            aluno.nome = Console.ReadLine();
 
-                        System.Console.WriteLine ("Digite a data de nascimento (dd/mm/aaaa)");
-                        aluno.dataNascimento = DateTime.Parse (Console.ReadLine ());
+                            System.Console.WriteLine("Digite a data de nascimento (dd/mm/aaaa)");
+                            aluno.dataNascimento = DateTime.Parse(Console.ReadLine());
 
-                        System.Console.WriteLine ("Digite o nome do curso");
-                        aluno.curso = Console.ReadLine ();
+                            System.Console.WriteLine("Digite o nome do curso");
+                            aluno.curso = Console.ReadLine();
 
-                        alunos[alunosCadastrados] = aluno;
+                            alunos[alunosCadastrados] = aluno;
 
-                        alunosCadastrados++;
+                            alunosCadastrados++;
 
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        System.Console.WriteLine ("Cadastro de Aluno concluído!");
-                        Console.ResetColor ();
+                            MostrarMensagem($"Cadastro de {aluno.GetType().Name} concluído!", TipoMensagemEnum.SUCESSO);
 
-                        System.Console.WriteLine ("Aperte ENTER para voltar ao menu");
-                        Console.ReadLine ();
+                        }
+                        else
+                        {
+                            MostrarMensagem($"\nLimite de cadasstro de {alunos.GetType().Name} atingido!", TipoMensagemEnum.ERRO);
+                        }
 
                         break;
+                    #endregion
+                    #region CADASTRO_SALAS
                     case 2:
-                        Sala sala = new Sala ();
+                        if (limiteSalas != salasCadastradas)
+                        {
+                            Sala sala = new Sala();
 
-                        System.Console.WriteLine ("Digite o número da sala");
-                        sala.numeroSala = int.Parse (Console.ReadLine ());
+                            System.Console.WriteLine("Digite o número da sala");
+                            sala.numeroSala = int.Parse(Console.ReadLine());
 
-                        System.Console.WriteLine ("Digite a capacidade total");
-                        sala.capacidadeTotal = int.Parse (Console.ReadLine ());
+                            System.Console.WriteLine("Digite a capacidade total");
+                            sala.capacidadeTotal = int.Parse(Console.ReadLine());
 
-                        sala.capacidadeAtual = sala.capacidadeTotal;
+                            sala.capacidadeAtual = sala.capacidadeTotal;
 
-                        sala.alunos = new string[sala.capacidadeTotal];
+                            sala.alunos = new string[sala.capacidadeTotal];
 
-                        salas[salasCadastradas] = sala;
+                            salas[salasCadastradas] = sala;
 
-                        salasCadastradas++;
+                            salasCadastradas++;
 
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        System.Console.WriteLine ("Cadastro de Sala concluído!");
-                        Console.ResetColor ();
-
-                        System.Console.WriteLine ("Aperte ENTER para voltar ao menu");
-                        Console.ReadLine ();
-
-                        break;
+                            MostrarMensagem($"Cadastro de {sala.GetType().Name} concluído!", TipoMensagemEnum.SUCESSO);
+                            else {
+                                MostrarMensagem($"Limite de {sala.GetType().Name} atingidos!", TipoMensagemEnum.ERRO);
+                            }
+                            break;
+                            #endregion
+                    #region ALOCAR_ALUNOS
                     case 3:
-                        if (alunosCadastrados == 0) {
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            System.Console.WriteLine ("Nenhum aluno cadastrado!");
-                            Console.ResetColor ();
 
-                            System.Console.WriteLine ("Aperte ENTER para voltar ao menu");
-                            Console.ReadLine ();
-                            continue;
-                        } else if (salasCadastradas == 0) {
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            System.Console.WriteLine ("Nenhuma sala cadastrada!");
-                            Console.ResetColor ();
-
-                            System.Console.WriteLine ("Aperte ENTER para voltar ao menu");
-                            Console.ReadLine ();
+                        if (!ValidarAlocarOuRemover(alunosCadastrados, salasCadastradas))
+                        {
                             continue;
                         }
 
                         System.Console.WriteLine("Digite o nome do aluno");
                         string nomeAluno = Console.ReadLine();
-                        Aluno alunoRecuperado = null;
-                        foreach (Aluno item in alunos)
-                        {
-                            if (item != null && nomeAluno.Equals(item.nome)) {
-                                alunoRecuperado = item;
-                                break;
-                            }
-                        }
+                        Aluno alunoRecuperado = ProcurarAlunoPorNome(alunos, nomeAluno);
 
-                        if (alunoRecuperado == null) 
+                        if (alunoRecuperado == null)
                         {
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            System.Console.WriteLine ($"Aluno {nomeAluno} não encontrado!");
-                            Console.ResetColor ();
-
-                            System.Console.WriteLine ("Aperte ENTER para voltar ao menu");
-                            Console.ReadLine ();
+                            MostrarMensagem($"Aluno {nomeAluno} não encontrado!", TipoMensagemEnum.ERRO);
                             continue;
                         }
 
@@ -128,78 +121,188 @@ namespace Senaizinho
                         int numeroSala = int.Parse(Console.ReadLine());
 
                         // Busca pela Sala correta
-                        Sala salaRecuperada = null;
-                        foreach (Sala item in salas)
-                        {
-                            if (item != null && numeroSala.Equals(item.numeroSala)) {
-                                salaRecuperada = item;
-                                break;
-                            }
+                        Sala salaRecuperada = ProcurarSalaPorNumero(salas, numeroSala);  }
                         }
 
-                        if (salaRecuperada == null) 
+                        if (salaRecuperada == null)
                         {
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            System.Console.WriteLine ($"Sala {numeroSala} não encontrada!");
-                            Console.ResetColor ();
-
-                            System.Console.WriteLine ("Aperte ENTER para voltar ao menu");
-                            Console.ReadLine ();
+                            MostrarMensagem($"Sala {numeroSala} não encontrada!", TipoMensagemEnum.ERRO);
                             continue;
 
                         }
 
-                        Console.ForegroundColor = ConsoleColor.Blue;
-                        System.Console.WriteLine(salaRecuperada.AlocarAluno(alunoRecuperado.nome));
-                        Console.ResetColor ();
-
-                        System.Console.WriteLine ("Aperte ENTER para voltar ao menu");
-                        Console.ReadLine ();
+                        //FIXME: Como exibir as mensagens em core diferente?
+                        MostrarMensagem(salaRecuperada.AlocarAluno(alunoRecuperado.nome), TipoMensagemEnum.DESTAQUE);
 
                         break;
+                    #endregion
+                    #region REMOVER_ALUNO
                     case 4:
+
+                        if (!ValidarAlocarOuRemover(alunosCadastrados, salasCadastradas))
+                        {
+                            continue;
+                        }
+
                         System.Console.WriteLine("Digite o nome do aluno");
-                        string nomeA = Console.ReadLine();
-                        Sala remove;
+                        string nomeAlunoRemover = Console.ReadLine();
+
+                        Aluno alunoRemover = null;
+
                         foreach (Aluno item in alunos)
                         {
-                            if (item != null && nomeA.Equals(item.nome)) {
-                                alunoRecuperado = item;
+                            if (item != null && nomeAlunoRemover.Equals(item.nome))
+                            {
+                                alunoRemover = item;
                                 break;
                             }
                         }
+
+                        if (alunoRemover == null)
+                        {
+                            MostrarMensagem($"Aluno {nomeAlunoRemover} não encontrado!", TipoMensagemEnum.ALERTA);
+                            continue;
+                        }
+
+                        // Recupera o numero da sala
+                        System.Console.WriteLine("Digite o número da sala");
+                        int numeroSalaRemover = int.Parse(Console.ReadLine());
+
+                        // Busca pela Sala correta
+                        Sala salaRemover = null;
+                        foreach (Sala item in salas)
+                        {
+                            if (item != null && numeroSalaRemover.Equals(item.numeroSala))
+                            {
+                                salaRemover = item;
+                                break;
+                            }
+                        }
+
+                        if (salaRemover == null)
+                        {
+                            MostrarMensagem($"Sala {numeroSalaRemover} não encontrada!", TipoMensagemEnum.ALERTA);
+                            continue;
+
+                        }
+
+                        MostrarMensagem(salaRemover.RemoverAluno(alunoRemover.nome), TipoMensagemEnum.DESTAQUE);
                         break;
+                    #endregion
+                    #region LISTAR_ALUNOS
                     case 5:
-                        foreach (var item in salas) {
-                            if (item != null) {
-                                System.Console.WriteLine ("-----------------------------------------------------");
-                                System.Console.WriteLine ($"Número da sala: {item.numeroSala}");
-                                System.Console.WriteLine ($"Vagas disponíveis: {item.capacidadeAtual}");
-                                System.Console.WriteLine ($"Alunos: {item.ExibirAlunos()}");
-                                System.Console.WriteLine ("-----------------------------------------------------");
+                        foreach (var item in salas)
+                        {
+                            if (item != null)
+                            {
+                                System.Console.WriteLine("-----------------------------------------------------");
+                                System.Console.WriteLine($"Número da sala: {item.numeroSala}");
+                                System.Console.WriteLine($"Vagas disponíveis: {item.capacidadeAtual}");
+                                System.Console.WriteLine($"Alunos: {item.ExibirAlunos()}");
+                                System.Console.WriteLine("-----------------------------------------------------");
                             }
                         }
 
-                        System.Console.WriteLine ("Aperte ENTER para voltar ao menu principal");
-                        Console.ReadLine ();
+                        System.Console.WriteLine("Aperte ENTER para voltar ao menu principal");
+                        Console.ReadLine();
                         break;
-                    case 6:
-                        foreach (var item in alunos) {
-                            if (item != null) {
-                                System.Console.WriteLine ("-----------------------------------------------------");
-                                System.Console.WriteLine ($"Nome do aluno: {item.nome}");
-                                System.Console.WriteLine ($"Curso: {item.curso}");
-                                System.Console.WriteLine ("-----------------------------------------------------");
-                            }
-                        }
-                        System.Console.WriteLine ("Aperte ENTER para voltar ao menu principal");
-                        Console.ReadLine ();
+                    #endregion
+                    #region LISTAR_SALAS
+                            case 6:
+                                foreach (var item in alunos)
+                                {
+                                    if (item != null)
+                                    {
+                                        System.Console.WriteLine("-----------------------------------------------------");
+                                        System.Console.WriteLine($"Nome do aluno: {item.nome}");
+                                        System.Console.WriteLine($"Curso: {item.curso}");
+                                        System.Console.WriteLine("-----------------------------------------------------");
+                                    }
+                                }
+                                System.Console.WriteLine("Aperte ENTER para voltar ao menu principal");
+                                Console.ReadLine();
 
-                        break;
-
+                                break;
+                                #endregion
                 }
 
-            } while (!querSair);
+            }
+            while (!querSair);
         }
+        static void MostrarMensagem(string mensagem, TipoMensagemEnum tipoMensagem)
+        {
+            switch (tipoMensagem)
+            {
+                case TipoMensagemEnum.SUCESSO:
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    break;
+
+                case TipoMensagemEnum.ERRO:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    break;
+
+                case TipoMensagemEnum.ALERTA:
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    break;
+
+                case TipoMensagemEnum.DESTAQUE:
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    break;
+
+                default:
+
+                    break;
+            }
+
+            System.Console.WriteLine(mensagem);
+            Console.ResetColor();
+
+            System.Console.WriteLine("Aperte ENTER para voltar ao menu principal");
+            Console.ReadLine();
+        }
+
+        static bool ValidarAlocarOuRemover(int alunosCadastrados, int salasCadastradas)
+        {
+            if (alunosCadastrados == 0)
+            {
+                MostrarMensagem("Não há alunos cadastrados!", TipoMensagemEnum.ALERTA);
+                return false;
+            }
+            if (salasCadastradas == 0)
+            {
+                MostrarMensagem("Não há salas cadastradas!", TipoMensagemEnum.ALERTA);
+                return false;
+            }
+
+            return true;
+        }
+
+        static Aluno ProcurarAlunoPorNome (Aluno[] alunos, string nome)
+        {
+            foreach (Aluno item in alunos)
+            {
+                if (item != null && nome.Equals(item.nome))
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
+
+        static Sala ProcurarSalaPorNumero (Sala[] salas, string numero) {
+             foreach (Sala item in salas)
+            {
+                if (item != null && numero.Equals(item.numero))
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
+
+
+
     }
 }
