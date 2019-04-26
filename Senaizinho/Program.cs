@@ -5,11 +5,19 @@ namespace Senaizinho_2_Manha
 {
     class Program
     {
+        enum MenuEnum : uint {
+            CADASTRO_ALUNO = 1,
+            CADASTRO_SALA,
+            LISTAR_ALUNOS,
+            LISTAR_SALAS,
+            ALOCAR_ALUNO,
+            REMOVER_ALUNO
+        };
+
         static void Main (string[] args) {
             
             int limiteAlunos = 5;
             int limiteSalas = 2;
-            int limiteProfessores = 2;
 
             Aluno[] alunos = new Aluno[limiteAlunos];
             Sala[] salas = new Sala[limiteSalas];
@@ -17,41 +25,65 @@ namespace Senaizinho_2_Manha
             int alunosCadastrados = 0;
             int salasCadastradas = 0;
 
+            string[] itensMenu = Enum.GetNames(typeof ( MenuEnum ) );
+
             bool querSair = false;
             do {
                 Console.Clear ();
-                System.Console.WriteLine ("===================================");
+                //HEADER
+                string barraMenu = "===================================";
+                System.Console.WriteLine (barraMenu);
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 System.Console.WriteLine ("        *** SENAIzinho ***         ");
                 Console.ResetColor ();
                 System.Console.WriteLine ("         Seja bem-vindo(a)         ");
-                System.Console.WriteLine ("===================================");
-                System.Console.WriteLine ("|| Digite sua opção:             ||");
-                System.Console.WriteLine ("||  1 - Cadastrar Aluno          ||");
-                System.Console.WriteLine ("||  2 - Cadastrar Sala           ||");
-                System.Console.WriteLine ("||  3 - Alocar Aluno             ||");
-                System.Console.WriteLine ("||  4 - Remover Aluno            ||");
-                System.Console.WriteLine ("||  5 - Verificar Salas          ||");
-                System.Console.WriteLine ("||  6 - Verificar Alunos         ||");
-                System.Console.WriteLine ("||  0 - Sair                     ||");
-                System.Console.WriteLine ("===================================");
+                System.Console.WriteLine (barraMenu);
+                // BODY
+                for (int i = 0; i < itensMenu.Length; i++) {
+                    string espacosFim = "";
+                    string bordaLinha = "||";
+                    string paragrafoInicio = "   ";
+                    string separadorOpcao = " - ";
 
-                System.Console.Write ("Código: ");
-                int codigo = int.Parse (Console.ReadLine ());
+                    string nomeTratado = itensMenu[i].Replace ("_", " ").ToLower ();
+                    nomeTratado = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase (nomeTratado);
+                    int espacoDezena = i / 10;
+                    
+                    string numeroOpcao = (i + 1).ToString();
+
+                    if (espacoDezena < 1) {
+                        paragrafoInicio = paragrafoInicio + " ";
+                    }
+
+                    int qntdeEspacos = barraMenu.Length - (bordaLinha.Length * 2) - paragrafoInicio.Length - numeroOpcao.Length - separadorOpcao.Length - nomeTratado.Length;
+
+                    for (int j = 0; j < qntdeEspacos; j++) {
+                        espacosFim += " ";
+                    }
+                    
+                    System.Console.WriteLine ($"{bordaLinha}{paragrafoInicio}{numeroOpcao}{separadorOpcao}{nomeTratado}{espacosFim}{bordaLinha}");
+                }
+                //FOOTER
+                System.Console.WriteLine ("||    0 - Sair                   ||");
+                System.Console.WriteLine (barraMenu);
 
                 string mensagem = "";
+
+                System.Console.Write ("Código: ");
+                MenuEnum codigo = (MenuEnum) Enum.Parse(typeof(MenuEnum), Console.ReadLine());
+
                 switch (codigo) {
                     #region CADASTRO_ALUNOS
-                    case 1:
+                    case MenuEnum.CADASTRO_ALUNO:
                         if (limiteAlunos != alunosCadastrados) {
                             System.Console.WriteLine ("Digite o nome do aluno");
+
                             Aluno aluno = new Aluno (Console.ReadLine ());
 
                             System.Console.WriteLine ("Digite a data de nascimento (dd/mm/aaaa)");
-                            aluno.dataNascimento = DateTime.Parse (Console.ReadLine ());
+                            aluno.DataNascimento = DateTime.Parse (Console.ReadLine ());
 
-                            System.Console.WriteLine ("Digite o nome do curso");
-                            aluno.curso = Console.ReadLine ();
+                            aluno.Curso = ExibirMenuCursos();
 
                             alunos[alunosCadastrados] = aluno;
 
@@ -66,16 +98,16 @@ namespace Senaizinho_2_Manha
                         break;
                     #endregion
                     #region CADASTRO_SALAS
-                    case 2:
+                    case MenuEnum.CADASTRO_SALA:
                         if (limiteSalas != salasCadastradas) {
                             
                             System.Console.WriteLine ("Digite o número da sala");
                             int numSala = int.Parse (Console.ReadLine ());
 
                             System.Console.WriteLine ("Digite a capacidade total");
-                            int CapacidadeTotal = int.Parse (Console.ReadLine ());
+                            int capacidadeTotal = int.Parse (Console.ReadLine ());
 
-                            Sala sala = new Sala (numSala, CapacidadeTotal);
+                            Sala sala = new Sala (numSala, capacidadeTotal);
 
                             salas[salasCadastradas] = sala;
 
@@ -91,7 +123,7 @@ namespace Senaizinho_2_Manha
                         break;
                     #endregion
                     #region ALOCAR_ALUNO
-                    case 3:
+                    case MenuEnum.ALOCAR_ALUNO:
                         if (!ValidarAlocarOuRemover(alunosCadastrados, salasCadastradas)) {
                             continue;
                         }
@@ -118,17 +150,18 @@ namespace Senaizinho_2_Manha
                             continue;
                         }
 
-                        //FIXME: Como exibir as mensagem em cores diferentes?
+                
                         if (salaRecuperada.AlocarAluno (alunoRecuperado, out mensagem)) {
                             MostrarMensagem(mensagem, TipoMensagemEnum.SUCESSO);
                         } else {
                             MostrarMensagem(mensagem, TipoMensagemEnum.ERRO);
                         }
+                        
 
                         break;
                     #endregion
                     #region REMOVER_ALUNO
-                    case 4:
+                    case MenuEnum.REMOVER_ALUNO:
                         if (!ValidarAlocarOuRemover(alunosCadastrados, salasCadastradas)) {
                             continue;
                         }
@@ -156,23 +189,23 @@ namespace Senaizinho_2_Manha
 
                         }
 
-                        //FIXME: Como exibir as mensagem em cores diferentes?
+                       
                         if (salaRemover.RemoverAluno (alunoRemover.Nome, out mensagem))
                         {
                             MostrarMensagem(mensagem, TipoMensagemEnum.SUCESSO);
-                        } else
-                        {
+                        } else {
                             MostrarMensagem(mensagem, TipoMensagemEnum.ERRO);
                         }
+                        
                         break;
                     #endregion
-                    #region LISTAR_ALUNOS
-                    case 5:
+                    #region LISTAR_SALAS
+                    case MenuEnum.LISTAR_SALAS:
                         foreach (var item in salas) {
                             if (item != null) {
                                 System.Console.WriteLine ("-----------------------------------------------------");
-                                System.Console.WriteLine ($"Número da sala: {item.numeroSala}");
-                                System.Console.WriteLine ($"Vagas disponíveis: {item.capacidadeAtual}");
+                                System.Console.WriteLine ($"Número da sala: {item.NumeroSala}");
+                                System.Console.WriteLine ($"Vagas disponíveis: {item.CapacidadeAtual}");
                                 System.Console.WriteLine ($"Alunos: {item.ExibirAlunos()}");
                                 System.Console.WriteLine ("-----------------------------------------------------");
                             }
@@ -182,13 +215,13 @@ namespace Senaizinho_2_Manha
                         Console.ReadLine ();
                         break;
                     #endregion
-                    #region LISTAR_SALAS
-                    case 6:
+                    #region LISTAR_ALUNOS
+                    case MenuEnum.LISTAR_ALUNOS:
                         foreach (var item in alunos) {
                             if (item != null) {
                                 System.Console.WriteLine ("-----------------------------------------------------");
-                                System.Console.WriteLine ($"Nome do aluno: {item.nome}");
-                                System.Console.WriteLine ($"Curso: {item.curso}");
+                                System.Console.WriteLine ($"Nome do aluno: {item.Nome}");
+                                System.Console.WriteLine ($"Curso: {item.Curso}");
                                 System.Console.WriteLine ("-----------------------------------------------------");
                             }
                         }
@@ -197,10 +230,20 @@ namespace Senaizinho_2_Manha
 
                         break;
                     #endregion
+                    #region SAIR_E_iNVALIDO
+                    case 0:
+                        System.Console.WriteLine("Obrigado por nos visitar, volte sempre!");
+                        querSair = true;
+                        break;
+                    default:
+                        MostrarMensagem("Opição Inválida, tente novamente...!", TipoMensagemEnum.ERRO);
+                    break;
+                    #endregion
 
                 }
 
             } while (!querSair);
+
         }
         static void MostrarMensagem(string mensagem, TipoMensagemEnum tipoMensagem)
         {
@@ -246,7 +289,7 @@ namespace Senaizinho_2_Manha
         static Aluno ProcurarAlunoPorNome(Aluno[] alunos, string nome) 
         {
             foreach (Aluno item in alunos) {
-                if (item != null && nome.Equals (item.nome)) {
+                if (item != null && nome.Equals (item.Nome)) {
                     return item;
                 }
             }
@@ -255,14 +298,41 @@ namespace Senaizinho_2_Manha
 
         static Sala ProcurarSalaPorNumero(Sala[] salas, int numeroSala) {
             foreach (Sala item in salas) {
-                if (item != null && numeroSala.Equals (item.numeroSala)) {
+                if (item != null && numeroSala.Equals (item.NumeroSala)) {
                     return item;
                 }
             }
             return null;
         }
     
-    
-    
+        static string ExibirMenuCursos () {
+
+            bool cursoEscolhido = false;
+            string curso = "";
+            do {
+                System.Console.WriteLine ("===================================");
+                System.Console.WriteLine ("#  Digite o código do curso:    #");
+                System.Console.WriteLine ("#  1 - DESENVOLVIMENTO          #");
+                System.Console.WriteLine ("#  2 - REDES                    #");
+                System.Console.WriteLine ("===================================");
+                int codigoCurso = int.Parse(Console.ReadLine());
+
+                switch (codigoCurso)
+                {
+                    case 1:
+                        curso = "DESENVOLVIMENTO";
+                        cursoEscolhido = true;
+                    break;
+                    case 2:
+                        curso = "REDES";
+                        cursoEscolhido = true;
+                    break;
+                    default:
+                        MostrarMensagem("Esse código de curso não existe!", TipoMensagemEnum.ALERTA);
+                    break;
+                }
+            } while(!cursoEscolhido);
+            return curso;
+        }
     }
 }

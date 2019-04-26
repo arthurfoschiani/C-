@@ -1,38 +1,37 @@
 namespace Senaizinho_2_Manha {
     public class Sala {
-        public int NumeroSala {get; private set;}
-        public int CapacidadeAtual {get; set;}
-        public int CapacidadeTotal {get;}
-        public Aluno[] Alunos {get; private set;}
+        public int NumeroSala { get; private set; }
+        public int CapacidadeAtual { get; set; }
+        public int CapacidadeTotal { get; }
+        public Aluno[] Alunos { get; private set; }
 
         public Sala (int numeroSala, int capacidadeTotal) {
             this.CapacidadeTotal = capacidadeTotal;
             this.NumeroSala = numeroSala;
             this.CapacidadeAtual = capacidadeTotal;
             this.Alunos = new Aluno[capacidadeTotal];
+
         }
 
         public bool AlocarAluno (Aluno aluno, out string mensagem) {
-            if (CapacidadeAtual > 0)
-            {
+            if (CapacidadeAtual > 0) {
                 for (int i = 0; i < Alunos.Length; i++) {
                     if (Alunos[i] == null) {
                         Alunos[i] = aluno;
                         CapacidadeAtual--;
-                        mensagem = $"Aluno {aluno.Nome} removido com sucesso!";
+                        mensagem = $"Aluno {aluno.Nome} cadastrado com sucesso!";
                         return true;
                     }
                 }
             }
-            mensagem = "não há mais vagas!";
+            mensagem = "Não há mais vagas!";
             return false;
         }
 
         public bool RemoverAluno (string nomeAluno, out string mensagem) {
-            if (CapacidadeAtual >= 0)
-            {
+            if (CapacidadeAtual >= 0) {
                 for (int i = 0; i < Alunos.Length; i++) {
-                    if (Alunos[i] != null && nomeAluno.Equals (Alunos[i])) {
+                    if (Alunos[i] != null && nomeAluno.Equals (Alunos[i].Nome)) {
                         Alunos[i] = null;
                         CapacidadeAtual++;
                         mensagem = $"Aluno {nomeAluno} removido com sucesso!";
@@ -41,6 +40,10 @@ namespace Senaizinho_2_Manha {
                 }
                 mensagem = $"{nomeAluno} não foi encontrado";
                 return false;
+
+            } else {
+                mensagem = "Não há aluno para ser removido!";
+                return false;
             }
         }
 
@@ -48,7 +51,7 @@ namespace Senaizinho_2_Manha {
             string nomesAlunos = "";
             foreach (var item in Alunos) {
                 if (item != null) {
-                    nomesAlunos += item + " ";
+                    nomesAlunos += item.Nome + " ";
                 }
             }
             return nomesAlunos;

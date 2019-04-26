@@ -4,16 +4,23 @@ namespace Senaizinho_2_Manha
     public class Aluno
     {
         public string Nome {get; set;}
-        public DateTime dataNascimento {get; set;}
-        public string curso {get; set;}
-        public int numeroSala {get; set;}
-        // Construtor Padrão
-        // public Aluno ()
-        public Aluno (string nome) {
+        public DateTime DataNascimento {get; set;}
+        public string Curso {get; set;}
+        public int NumeroSala {get; set;}
+        
+        /* Construtor padrão */
+        //public Aluno(){}
+
+        /* Exemplo de construtor com restrição (parâmetro) */ 
+        public Aluno(string nome) {
             this.Nome = nome;
         }
-        // public Aluno (string nome, DateTime dataNascimento) {
+        
+        /* Exemplo de construtor alternativo */ 
+        // public Aluno(string nome, DateTime dataNascimento) {
 
         // }
     }
+
+    
 }
