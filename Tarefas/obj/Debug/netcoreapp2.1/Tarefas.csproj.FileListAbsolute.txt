@@ -1,0 +1,15 @@
+C:\Users\43127523890\Desktop\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.csprojAssemblyReference.cache
+C:\Users\43127523890\Desktop\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Desktop\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.AssemblyInfoInputs.cache
+C:\Users\43127523890\Desktop\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.csprojAssemblyReference.cache
+C:\Users\43127523890\Documents\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.csproj.CoreCompileInputs.cache
+C:\Users\43127523890\Documents\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.AssemblyInfoInputs.cache
+C:\Users\43127523890\Documents\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.AssemblyInfo.cs
+C:\Users\43127523890\Documents\C-2\Tarefas\bin\Debug\netcoreapp2.1\Tarefas.deps.json
+C:\Users\43127523890\Documents\C-2\Tarefas\bin\Debug\netcoreapp2.1\Tarefas.runtimeconfig.json
+C:\Users\43127523890\Documents\C-2\Tarefas\bin\Debug\netcoreapp2.1\Tarefas.runtimeconfig.dev.json
+C:\Users\43127523890\Documents\C-2\Tarefas\bin\Debug\netcoreapp2.1\Tarefas.dll
+C:\Users\43127523890\Documents\C-2\Tarefas\bin\Debug\netcoreapp2.1\Tarefas.pdb
+C:\Users\43127523890\Documents\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.dll
+C:\Users\43127523890\Documents\C-2\Tarefas\obj\Debug\netcoreapp2.1\Tarefas.pdb
